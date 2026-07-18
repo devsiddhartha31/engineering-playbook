@@ -6,59 +6,87 @@
 
 This case study chronicles the engineering journey of a production CMS—from its initial implementation to a mature platform capable of supporting millions of users.
 
-Rather than presenting only the final architecture, it documents the decisions, challenges, production incidents, and optimizations that shaped the system over time.
+Rather than presenting only the final architecture, it documents the architectural decisions, infrastructure evolution, production incidents, and engineering trade-offs that shaped the system over time.
 
-The focus is on practical engineering lessons learned while operating a large-scale production application.
+The focus is on practical engineering lessons learned while designing, operating, optimizing, and maintaining a large-scale production application.
 
 ## What You'll Learn
 
 Throughout this case study, you'll explore topics such as:
 
 * Backend architecture evolution
-* PostgreSQL optimization
+* PostgreSQL schema design and optimization
+* Database indexing strategies
 * API design and performance
-* Server scaling on DigitalOcean
-* Infrastructure management
+* Infrastructure evolution on DigitalOcean
+* Nginx configuration and operational practices
+* PM2 process management
 * Connection pooling
-* Background workers
-* Memory and CPU optimization
-* Disk space management
-* Production incidents and debugging
-* Monitoring and observability
-* Reliability improvements
+* Report query optimization
+* Production incident investigation
+* Deployment reliability
+* Server monitoring and maintenance
+* Scalability planning
 * Engineering trade-offs and lessons learned
 
-## Case Study Structure
+## Repository Structure
 
-| Chapter                       | Description                                                              |
-| ----------------------------- | ------------------------------------------------------------------------ |
-| 01. System Overview           | Introduction to the platform, technology stack, and overall architecture |
-| 02. Initial Architecture      | How the first version of the system was designed                         |
-| 03. Database Evolution        | How the database changed as traffic increased                            |
-| 04. Backend Evolution         | Improvements made to the backend architecture                            |
-| 05. Server Scaling            | Infrastructure upgrades and server optimization                          |
-| 06. Production Incidents      | Real issues encountered in production and how they were resolved         |
-| 07. Performance Optimizations | Database, API, server, and application-level optimizations               |
-| 08. Current Architecture      | Overview of the current production architecture                          |
-| 09. Lessons Learned           | What worked well, what didn't, and what we'd do differently today        |
+| Chapter                                                                      | Description                                                                    |
+|------------------------------------------------------------------------------| ------------------------------------------------------------------------------ |
+| 01. [System Overview](01-system-overview.md)                                 | Introduction to the platform, technology stack, and system architecture        |
+| 02. [Initial Architecture](02-initial-architecture.md)                       | Design decisions behind the first production version                           |
+| 03. [Database Evolution](03-database-evolution.md)                           | How the database evolved alongside application growth                          |
+| 04. [Database Optimization](04-database-optimization.md)                     | Indexing strategies, query optimization, and performance improvements          |
+| 05. [Backend Evolution](05-backend-evolution.md)                             | Improvements to backend architecture, APIs, and application design             |
+| 06. [Infrastructure Evolution](06-infrastructure-evolution.md)               | Server architecture, deployment improvements, and operational maturity         |
+| 07. [Production Incidents](07-production-incidents.md)                       | Overview of production engineering incidents and the lessons learned from them |
+| 08. [Current Production Architecture](08-current-production-architecture.md) | A complete overview of the platform in its current production state            |
+| 09. [Lessons Learned](09-lessons-learned.md)                                 | Engineering principles and insights gained throughout the platform's evolution |
+
+### Production Incident Case Studies
+
+Chapter 07 links to a collection of detailed production engineering case studies, including:
+
+- [EventLog Timestamp Indexing](incidents/eventlog-indexing.md)
+- [Connection Pool Exhaustion](incidents/connection-pool-exhaustion.md)
+- [Nginx Log Disk Exhaustion](incidents/nginx-log-disk-exhaustion.md)
+- [DigitalOcean Droplet Upgrade](incidents/digitalocean-droplet-upgrade.md)
+- [PM2 Process Management](incidents/pm2-process-management.md)
+- [Report Query Optimization](incidents/report-query-optimization.md)
+
+Each incident documents:
+
+* Background
+* Investigation
+* Root Cause
+* Resolution
+* Long-Term Improvements
+* Results
+* Lessons Learned
+
+These case studies demonstrate how real production challenges influenced the platform's architecture and operational practices.
 
 ## How to Read This
 
-The chapters are intended to be read in order.
+The chapters are intended to be read sequentially.
 
-Each chapter builds upon the previous one, showing how the platform evolved in response to increasing scale and real-world operational challenges.
+Each chapter builds upon the previous one, showing how the platform evolved from a simple production deployment into a more mature and scalable system.
 
-Where applicable, topics are presented using the following format:
+Where applicable, engineering decisions are presented using a consistent structure:
 
-* The problem
-* Why it occurred
+* Background
+* Problem or Incident
 * Investigation
-* Solution
+* Root Cause
+* Resolution
 * Results
-* Lessons learned
+* Lessons Learned
+* Takeaway
+
+This approach emphasizes not only the technical solution but also the engineering reasoning behind each decision.
 
 ## Disclaimer
 
-Some implementation details, code snippets, identifiers, configurations, and business-specific information have been modified or generalized to protect proprietary information.
+Some implementation details, code snippets, identifiers, configurations, infrastructure specifications, and business-specific information have been modified or generalized to protect proprietary information.
 
-The objective is to share engineering concepts, architectural decisions, and production learnings without exposing confidential aspects of the original system.
+The objective of this repository is to share practical engineering concepts, architectural decisions, production experiences, and operational lessons without exposing confidential aspects of the original production system.
