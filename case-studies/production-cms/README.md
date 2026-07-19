@@ -33,15 +33,15 @@ Throughout this case study, you'll explore topics such as:
 
 | Chapter                                                                      | Description                                                                    |
 |------------------------------------------------------------------------------| ------------------------------------------------------------------------------ |
-| 01. [System Overview](01-system-overview.md)                                 | Introduction to the platform, technology stack, and system architecture        |
-| 02. [Initial Architecture](02-initial-architecture.md)                       | Design decisions behind the first production version                           |
-| 03. [Database Evolution](03-database-evolution.md)                           | How the database evolved alongside application growth                          |
-| 04. [Database Optimization](04-database-optimization.md)                     | Indexing strategies, query optimization, and performance improvements          |
-| 05. [Backend Evolution](05-backend-evolution.md)                             | Improvements to backend architecture, APIs, and application design             |
-| 06. [Infrastructure Evolution](06-infrastructure-evolution.md)               | Server architecture, deployment improvements, and operational maturity         |
-| 07. [Production Incidents](07-production-incidents.md)                       | Overview of production engineering incidents and the lessons learned from them |
-| 08. [Current Production Architecture](08-current-production-architecture.md) | A complete overview of the platform in its current production state            |
-| 09. [Lessons Learned](09-lessons-learned.md)                                 | Engineering principles and insights gained throughout the platform's evolution |
+| 01. [System Overview](chapters/01-system-overview.md)                        | Introduction to the platform, technology stack, and system architecture        |
+| 02. [Initial Architecture](chapters/02-initial-architecture.md)                       | Design decisions behind the first production version                           |
+| 03. [Database Evolution](chapters/03-database-evolution.md)                           | How the database evolved alongside application growth                          |
+| 04. [Database Optimization](chapters/04-database-optimization.md)                     | Indexing strategies, query optimization, and performance improvements          |
+| 05. [Backend Evolution](chapters/05-backend-evolution.md)                             | Improvements to backend architecture, APIs, and application design             |
+| 06. [Infrastructure Evolution](chapters/06-infrastructure-evolution.md)               | Server architecture, deployment improvements, and operational maturity         |
+| 07. [Production Incidents](chapters/07-production-incidents.md)                       | Overview of production engineering incidents and the lessons learned from them |
+| 08. [Current Production Architecture](chapters/08-current-production-architecture.md) | A complete overview of the platform in its current production state            |
+| 09. [Lessons Learned](chapters/09-lessons-learned.md)                                 | Engineering principles and insights gained throughout the platform's evolution |
 
 ### Production Incident Case Studies
 
@@ -53,6 +53,7 @@ Chapter 07 links to a collection of detailed production engineering case studies
 - [DigitalOcean Droplet Upgrade](incidents/digitalocean-droplet-upgrade.md)
 - [PM2 Process Management](incidents/pm2-process-management.md)
 - [Report Query Optimization](incidents/report-query-optimization.md)
+- [CSV Export Scalability](incidents/csv-export-scalability.md)
 
 Each incident documents:
 

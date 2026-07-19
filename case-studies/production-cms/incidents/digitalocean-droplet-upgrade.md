@@ -253,7 +253,7 @@ The DigitalOcean droplet upgrade was not simply an increase in server size—it 
 
 ## Related Documents
 
-* [Infrastructure Evolution](../06-infrastructure-evolution.md)
+* [Infrastructure Evolution](../chapters/06-infrastructure-evolution.md)
 * [EventLog Timestamp Indexing](eventlog-indexing.md)
 * [Connection Pool Exhaustion](connection-pool-exhaustion.md)
 * [Nginx Log Disk Exhaustion](nginx-log-disk-exhaustion.md)

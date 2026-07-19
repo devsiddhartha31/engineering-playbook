@@ -265,6 +265,6 @@ One of the simplest operational improvements—implementing automatic log rotati
 
 ## Related Documents
 
-* [Infrastructure Evolution](../06-infrastructure-evolution.md)
+* [Infrastructure Evolution](../chapters/06-infrastructure-evolution.md)
 * [EventLog Timestamp Indexing](eventlog-indexing.md)
 * [Connection Pool Exhaustion](connection-pool-exhaustion.md)

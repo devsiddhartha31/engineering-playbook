@@ -233,7 +233,7 @@ By analyzing real query patterns, introducing targeted indexes, and reducing unn
 
 ## Related Documents
 
+* [CSV Export Scalability](csv-export-scalability.md)
 * [EventLog Timestamp Indexing](eventlog-indexing.md)
 * [Connection Pool Exhaustion](connection-pool-exhaustion.md)
-* [Database Optimization](../04-database-optimization.md)
-* [Infrastructure Evolution](../06-infrastructure-evolution.md)
+* [Database Optimization](../chapters/04-database-optimization.md)

@@ -81,14 +81,17 @@ At the time of writing, the following production incidents have been documented:
 
 ### Infrastructure
 
-* [Nginx Log Disk Exhaustion](incidents/nginx-log-disk-exhaustion.md)
-* [DigitalOcean Droplet Upgrade](incidents/digitalocean-droplet-upgrade.md)
+* [Nginx Log Disk Exhaustion](../incidents/nginx-log-disk-exhaustion.md)
+* [DigitalOcean Droplet Upgrade](../incidents/digitalocean-droplet-upgrade.md)
 
 ### Database
 
-* [EventLog Timestamp Indexing](incidents/eventlog-indexing.md)
-* [Report Query Optimization](incidents/report-query-optimization.md)
-* [Connection Pool Exhaustion](incidents/connection-pool-exhaustion.md)
+* [EventLog Timestamp Indexing](../incidents/eventlog-indexing.md)
+* [Report Query Optimization](../incidents/report-query-optimization.md)
+* [Connection Pool Exhaustion](../incidents/connection-pool-exhaustion.md)
+
+### Application Scalability
+* [CSV Export Scalability](../incidents/csv-export-scalability.md)
 
 ### Application Operations
 

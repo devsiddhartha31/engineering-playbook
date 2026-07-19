@@ -248,7 +248,7 @@ Although the application code remained largely unchanged, the operational maturi
 
 ## Related Documents
 
-* [Infrastructure Evolution](../06-infrastructure-evolution.md)
+* [Infrastructure Evolution](../chapters/06-infrastructure-evolution.md)
 * [DigitalOcean Droplet Upgrade](digitalocean-droplet-upgrade.md)
 * [Nginx Log Disk Exhaustion](nginx-log-disk-exhaustion.md)
 * [Connection Pool Exhaustion](connection-pool-exhaustion.md)
